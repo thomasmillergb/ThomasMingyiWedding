@@ -1,4 +1,4 @@
-package com.thomasmillergb;
+package com.thomasmillergb.thomasMingyiWeddingApplication;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
