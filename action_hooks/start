@@ -8,7 +8,8 @@ cd $OPENSHIFT_REPO_DIR
 echo "Build war"
 mvn install -P openshift
 echo "Deploy War"
-cp $OPENSHIFT_REPO_DIR/target/wedding.war $OPENSHIFT_DATA_DIR/apache-tomcat-9.0.0.M13/webapps/WEDDING.war
-cp $OPENSHIFT_REPO_DIR/target/wedding.war $OPENSHIFT_DATA_DIR/apache-tomcat-9.0.0.M13/webapps/ROOT.war
+cp $OPENSHIFT_REPO_DIR/target/wedding.war $OPENSHIFT_DATA_DIR/apache-tomcat-9.0.0.M13/webapps/wedding.war
 cd $OPENSHIFT_DATA_DIR/apache-tomcat-9.0.0.M13/bin
 ./startup.sh
+
+sh $OPENSHIFT_DATA_DIR/apache-tomcat-9.0.0.M13/bin/startup.sh
