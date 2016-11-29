@@ -1,4 +1,4 @@
-package com.thomasmillergb.thomasMingyiWeddingApplication.controller;
+package com.thomasmillergb.thomasMingyiWeddingApplication.controller.restcontroller;
 
 /**
  * Created by Mingyi-PC on 28/11/2016.
@@ -8,7 +8,6 @@ package com.thomasmillergb.thomasMingyiWeddingApplication.controller;
 public class RestApi {
 
     public static final String endpointPrefix = "/api/v1/";
-    static final        String home           = "home";
-
+    static final        String serverStatus           = "server/status";
 
 }

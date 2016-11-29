@@ -1,4 +1,4 @@
-package com.thomasmillergb.thomasMingyiWeddingApplication.controller;
+package com.thomasmillergb.thomasMingyiWeddingApplication.controller.restcontroller;
 
 import com.thomasmillergb.thomasMingyiWeddingApplication.core.appstate.AppState;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,17 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Mingyi-PC
  */
 @RestController
+@RequestMapping(RestApi.endpointPrefix)
 public class HomeController {
     public HomeController() {
     }
 
-    @RequestMapping(value = RestApi.home, method = RequestMethod.GET)
+    @RequestMapping(value = RestApi.serverStatus, method = RequestMethod.GET)
     public AppState newGame() {
-        return AppState.RUNNING;
-    }
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public AppState defaultHome() {
         return AppState.RUNNING;
     }
 

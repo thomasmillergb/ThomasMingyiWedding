@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class JspController {
 
-    @RequestMapping("/jsptest")
+    @RequestMapping("/")
     public String jsptest(ModelAndView modelAndView) {
         return "jsp-spring-boot";
     }
