@@ -19,4 +19,10 @@ public class HomeController {
     public AppState newGame() {
         return AppState.RUNNING;
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public AppState defaultHome() {
+        return AppState.RUNNING;
+    }
+
 }
